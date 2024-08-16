@@ -1,27 +1,47 @@
-# FrontendApp
+# Neck Beard Coffee
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+## Description
 
-## Development server
+This project is a personal endeavor aimed at refining my skills. It involves developing a website for a fictional coffee company called Neck Beard Coffee using Angular 18. The project incorporates AI-generated assets, including product images and logos. My objective is to create a fully functional site featuring OAuth authentication, a backend API, and a database (which are yet to be implemented). The site will also include an online shop and additional features that are still under development. This project is a work in progress and will take some time to complete. I welcome any feedback, tips, or contributions. Please feel free to reach out.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features / Future Features
 
-## Code scaffolding
+- Angular 18
+- AI-generated assets
+- OAuth authentication
+- Backend API and database (coming soon)
+- Online shop
+- Additional features (TBD)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js
+- Angular CLI
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gregularjoe/NeckBeardCoffee.git
 
-## Running end-to-end tests
+2. Navigate to the project directory:
+cd NeckBeardCoffee
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Install the dependencies:
+npm install
 
-## Further help
+4. Running the Project
+Start the development server:
+ng serve
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Open your browser and navigate to http://localhost:4200 (may be different for you).
+
+### Contributing
+If you have any feedback, tips, or contributions, feel free to reach out.
+
+### Contact
+GregID@proton.me
+
+Thank you for checking out Neck Beard Coffee!
