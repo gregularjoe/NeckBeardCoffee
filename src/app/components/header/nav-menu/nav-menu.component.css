@@ -1,0 +1,54 @@
+#nav-menu-container {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(27, 27, 27);
+}
+
+#menu-items-container {
+  display: flex;
+  justify-content: left;
+}
+
+.menu-item {
+  height: 100%;
+  background-color: rgb(27, 27, 27);
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  position: relative; /* Needed for the pseudo-element */
+}
+
+.menu-item:hover {
+  background-color: rgb(47, 47, 47); /* Lightens the background color slightly */
+  cursor: pointer;
+}
+
+.menu-item:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: limegreen;
+  background: linear-gradient(to right, transparent, limegreen, limegreen, transparent);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.menu-item-lbl {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: whitesmoke;
+  transition: color 0.6s ease;   
+  padding: 0 .5rem 0 .5rem;
+}
+
+.menu-item:hover .menu-item-lbl {
+  color: limegreen; /* Changes label text color to green */
+  font-size: 15px;
+  font-weight: bold;
+}

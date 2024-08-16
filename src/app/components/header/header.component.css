@@ -1,0 +1,28 @@
+
+#logo-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#jhc-logo-header {
+  width: 100px;
+  height: 100px;
+  padding-top: .5rem;
+
+}
+
+#jhc-heading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: whitesmoke;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top */
+}
