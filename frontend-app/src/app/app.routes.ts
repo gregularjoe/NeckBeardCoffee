@@ -7,6 +7,7 @@ import { SpaceCadetComponent } from './components/products/coffee/space-cadet/sp
 import { FlowPowComponent } from './components/products/coffee/flow-pow/flow-pow.component';
 import { OutThereComponent } from './components/products/coffee/out-there/out-there.component';
 import { OhMyDaysComponent } from './components/products/coffee/oh-my-days/oh-my-days.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -24,6 +25,7 @@ export const routes: Routes = [
             }
         ]
     },
+    {path: 'shopping-cart', component: ShoppingCartComponent}
     
 ];
       
