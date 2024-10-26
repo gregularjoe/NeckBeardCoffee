@@ -13,12 +13,13 @@ import { CoffeeService } from '../../../../shared/services/products/coffee/coffe
 })
 export class FlowPowComponent {
 
-  // itemObject!: object;
+  itemObject!: any;
+  name: string = "Flow Pow"
 
   itemImgUrl!: string;
   itemTitle!: string;
-  itemDescriptionSmall!: string;
-  itemAttributesBasic!: string[];
+  itemDescMed!: string;
+  itemAttrBasic!: string[];
   itemPrice!: number;
 
   constructor(private coffeeDataService: CoffeeService) {}
@@ -29,14 +30,8 @@ export class FlowPowComponent {
   
   fetchData(): void {
     this.coffeeDataService.getCoffee().subscribe(resp => {
-      // this.itemObject = resp;
-      // console.log(this.itemObject)
-      this.itemTitle = resp[1].itemTitle;
-      this.itemImgUrl = resp[1].itemImgUrl;
-      this.itemPrice = resp[1].itemPrice;
-      this.itemDescriptionSmall = resp[1].itemDescriptionSmall;
-      this.itemAttributesBasic = resp[1].itemAttributesBasic;
-      this.itemPrice = resp[1].itemPrice;
+      console.log("FlowPow Comp:", resp)
+      this.itemObject = resp.find(obj => obj.itemTitle === this.name);
     });
   }
 

@@ -4,6 +4,7 @@ import { MatButton } from '@angular/material/button';
 import { MatFormField, MatInput } from '@angular/material/input';
 import { ItemListingComponent } from '../../../shared/item-listing/item-listing.component';
 import { CoffeeService } from '../../../../shared/services/products/coffee/coffee-data.service';
+import { ICoffee } from '../../../../shared/interfaces/icoffee';
 
 @Component({
   selector: 'app-java-coffee',
@@ -21,18 +22,19 @@ import { CoffeeService } from '../../../../shared/services/products/coffee/coffe
 
 export class JavaCoffeeComponent {
 
-  // itemObject!: object;
+  itemObject!: any;
+  name: string = "Java";
 
   itemImgUrl!: string;
   itemTitle!: string;
-  itemDescriptionSmall!: string;
-  itemAttributesBasic!: string[];
+  itemDescMed!: string;
+  itemAttrBasic!: string[];
   itemPrice!: number;
 
-  // [itemImgUrl]= "itemImgURL"
+  // [itemImgUrl]= "itemImgUrl"
   // [itemTitle]= "itemTitle"
-  // [itemDescriptionSmall]= "itemDescriptionSmall"
-  // [itemAttributesBasic]= "itemAttributesBasic"
+  // [itemDescMed]= "itemDescMed"
+  // [itemAttrBasic]= "itemAttrBasic"
   // [itemPrice]= "itemPrice"
 
   constructor(private coffeeDataService: CoffeeService) {}
@@ -43,14 +45,8 @@ export class JavaCoffeeComponent {
 
   fetchData(): void {
     this.coffeeDataService.getCoffee().subscribe(resp => {
-      // this.itemObject = resp;
       console.log("java comp:", resp)
-      this.itemTitle = resp[0].itemTitle;
-      this.itemImgUrl = resp[0].itemImgUrl;
-      this.itemPrice = resp[0].itemPrice;
-      this.itemDescriptionSmall = resp[0].itemDescriptionSmall;
-      this.itemAttributesBasic = resp[0].itemAttributesBasic;
-      this.itemPrice = resp[0].itemPrice;
+      this.itemObject = resp.find(obj => obj.itemTitle === this.name);
     });
   }
 

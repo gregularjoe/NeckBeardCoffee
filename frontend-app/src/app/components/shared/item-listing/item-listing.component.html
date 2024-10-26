@@ -4,28 +4,28 @@
         <div class="item-img-container">
             <img
                 class="item-img"
-                src="{{itemImgUrl}}"
+                src="{{itemObject.itemImgUrl}}"
                 alt="The flagship coffee for Neck Beard Coffee. A simple white design on a black coffee bag. The word Coffee appears at the top of the bag"
             />
         </div>
         <div class="item-options-container">
-            <h2 class="item-title">{{itemTitle}}</h2>
+            <h2 class="item-title">{{itemObject.itemTitle}}</h2>
             <div class="description-small-container">
-                <p class="description-small-txt">{{itemDescriptionSmall}}</p>
+                <p class="description-small-txt">{{itemObject.itemDescMed}}</p>
                 <ul class="item-attributes-basic-ul">
-                    <li class="item-attributes-basic-li">Profile: {{itemAttributesBasic[0]}}</li>
-                    <li class="item-attributes-basic-li">Roast: {{itemAttributesBasic[1]}}</li>
-                    <li class="item-attributes-basic-li">Size: {{itemAttributesBasic[2]}}</li>
+                    <li class="item-attributes-basic-li">Profile: {{itemObject.itemAttrBasic[0]}}</li>
+                    <li class="item-attributes-basic-li">Roast: {{itemObject.itemAttrBasic[1]}}</li>
+                    <li class="item-attributes-basic-li">Size: {{itemObject.itemAttrBasic[2]}}</li>
                 </ul>
             </div>
     
             <div class="item-price-container">
-                <p class="item-price">${{itemPrice}}</p>
+                <p class="item-price">${{itemObject.itemPrice}}</p>
             </div>
     
             <div class="add-to-cart-container">
                 <button mat-button class="add-to-cart-btn">Add to Cart</button>
-                <input  class="item-amount" type="number" value="1"/>
+                <input  class="item-quantity" type="number" value="1"/>
               
             </div>
     

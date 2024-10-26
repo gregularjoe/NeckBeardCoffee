@@ -1,1 +1,27 @@
-<p>shopping-cart works!</p>
+
+
+<div class="shopping-cart-container">
+    <h2 class="shopping-cart-title">Your Shopping Cart</h2>
+
+    @for(item of this.itemObjectArray; track item) {
+        <div  class="shopping-cart-card">
+            <div class="left-product-details">
+                <a 
+                routerLink="{{item.itemUrl}}" 
+                routerLinkActive="active" 
+                ariaCurrentWhenActive="page">
+                <img class="preview-img" src="{{item.itemImgUrl}}" alt="Preview image of a product added to your cart.">
+                </a>
+                <h4 class="product-title">{{item.itemDescSmall}}</h4>
+            </div>
+    
+            <div class="right-product-details">
+                <h4 class="product-price">${{item.itemPrice}}</h4>
+                <input class="purchase-quantity" type="number" value="{{item.purchaseQuantity}}">
+                <mat-icon  class="remove-btn" title="Remove item from shopping cart" (click)="removeFromCart(item)">close</mat-icon>
+            </div>
+        </div>
+    }
+
+    
+</div>
