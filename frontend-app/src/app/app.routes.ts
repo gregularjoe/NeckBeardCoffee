@@ -12,20 +12,41 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 export const routes: Routes = [
     {path: '', component: HomeComponent},
 
-    {path: 'products', component: ProductsComponent,
-        children: [
-            { path: 'coffee',component: CoffeeComponent,
-                children: [
-                    {path: 'java-coffee', component: JavaCoffeeComponent},
-                    {path: 'space-cadet', component: SpaceCadetComponent},
-                    {path: 'flow-pow', component: FlowPowComponent},
-                    {path: 'out-there', component: OutThereComponent},
-                    {path: 'oh-my-days', component: OhMyDaysComponent}
-                ]
-            }
-        ]
-    },
-    {path: 'shopping-cart', component: ShoppingCartComponent}
+    {path: 'products', component: ProductsComponent, title: "| Products |"},
+
+    { path: 'products/coffee',component: CoffeeComponent, title: " | Products | Coffee |"},              
+    { path: 'products/coffee/java-coffee', component: JavaCoffeeComponent, title: "| Products | Coffee | Java |" },
+    { path: 'products/coffee/space-cadet', component: SpaceCadetComponent, title: "| Products | Coffee | Space Cadet |" },
+    { path: 'products/coffee/flow-pow', component: FlowPowComponent, title: "| Products | Coffee | Flow Pow |" },
+    { path: 'products/coffee/out-there', component: OutThereComponent, title: "| Products | Coffee | Out There |" },
+    { path: 'products/coffee/oh-my-days', component: OhMyDaysComponent, title: "| Products | Coffee | Oh My Days |" },
+    
+  // merch path
+
+    {path: 'shopping-cart', component: ShoppingCartComponent, title: "| Shopping Cart |"}
+
+
+
+
+
+
+
+
+    // {path: 'products', component: ProductsComponent, title: "| Products |",
+    //     children: [
+    //         { path: 'coffee',component: CoffeeComponent, title: " | Products | Coffee |",
+    //             children: [
+    //                 { path: 'java-coffee', component: JavaCoffeeComponent, title: "| Products | Coffee | Java |" },
+    //                 { path: 'space-cadet', component: SpaceCadetComponent, title: "| Products | Coffee | Space Cadet |" },
+    //                 { path: 'flow-pow', component: FlowPowComponent, title: "| Products | Coffee | Flow Pow |" },
+    //                 { path: 'out-there', component: OutThereComponent, title: "| Products | Coffee | Out There |" },
+    //                 { path: 'oh-my-days', component: OhMyDaysComponent, title: "| Products | Coffee | Oh My Days |" }
+    //             ]
+    //         }
+    //     ]
+    // },
+    // {path: 'shopping-cart', component: ShoppingCartComponent, title: "| Shopping Cart |"}
+    
     
 ];
       

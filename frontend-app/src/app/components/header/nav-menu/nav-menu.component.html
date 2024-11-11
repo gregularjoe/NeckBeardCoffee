@@ -1,23 +1,61 @@
-<div id="nav-menu-container">
-  <div id="menu-items-container">
-    <div class="menu-item">
-      <h4 class="menu-item-lbl">About Us</h4>
-    </div>
-
-    <div class="menu-item">
-      <h4 class="menu-item-lbl">Blog</h4>
-    </div>
-
-    <div class="menu-item">
-      <h4 class="menu-item-lbl">Products</h4>
-    </div>
-
-    <div class="menu-item">
-      <h4 class="menu-item-lbl">Locations</h4>
-    </div>
-
-    <div class="menu-item">
-      <h4 class="menu-item-lbl">Contact Us</h4>
+<div id="bottom-bar-container">
+  <div id="nav-menu-container">
+    <div id="menu-items-container">
+      <div class="menu-item">
+        <a 
+          routerLink="/about-us" 
+          routerLinkActive="active" 
+          ariaCurrentWhenActive="page">
+          <h4 class="menu-item-lbl">About Us</h4>
+        </a>
+      </div>
+  
+      <div class="menu-item">
+        <a 
+          routerLink="/blog" 
+          routerLinkActive="active" 
+          ariaCurrentWhenActive="page">
+          <h4 class="menu-item-lbl">Blog</h4>
+        </a>
+      </div>
+  
+      <div
+      routerLink="/products" 
+      routerLinkActive="active" 
+      ariaCurrentWhenActive="page"
+      class="menu-item">
+          <h4 class="menu-item-lbl">Products</h4>
+      </div>
+  
+      <div class="menu-item">
+        <a 
+          routerLink="/locations" 
+          routerLinkActive="active" 
+          ariaCurrentWhenActive="page">
+          <h4 class="menu-item-lbl">Locations</h4>
+        </a>
+      </div>
+  
+      <div
+      routerLink="/contact-us" 
+      routerLinkActive="active" 
+      ariaCurrentWhenActive="page"
+      class="menu-item">
+        <h4 class="menu-item-lbl">Contact Us</h4>
+      </div>
     </div>
   </div>
+  
+  <div id="nav-bar-right-container">
+  
+    <mat-icon class="top-bar-icon">mail</mat-icon>
+    <mat-icon class="top-bar-icon">perm_identity</mat-icon>
+    <a 
+    routerLink="/shopping-cart" 
+    routerLinkActive="active" 
+    ariaCurrentWhenActive="page">
+    <mat-icon class="top-bar-icon">shopping_cart</mat-icon>
+    </a>
+  </div>
+  
 </div>

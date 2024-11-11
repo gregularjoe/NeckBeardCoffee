@@ -1,0 +1,104 @@
+
+/* #product-card-container-top {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    
+  } */
+#product-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 3rem 0;
+}
+
+.product-card {
+  background-color: rgb(40, 40, 40);
+  box-shadow: 2px 2px;
+  border: solid 2px whitesmoke;
+  border-radius: 15px;
+  height: 20rem;
+  width: 35rem;
+  padding: .5rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.product-card-img-container {
+  align-self: center;
+  /* border: solid 2px whitesmoke; */
+  border-radius: 18px;
+  /* height: 16rem;
+  width: 15rem; */
+  padding: .5rem;
+  margin: 2rem .5rem 2rem .5rem;
+  /* background-color: white;
+  border: solid 2px black;
+  height: 12rem;
+  width: 12rem;
+  position: relative;
+  justify-self: center; */
+
+}
+.product-name {
+  color: whitesmoke;
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.product-card-img {
+  height: 15rem;
+  width: 15rem;
+  border: solid 5px rgba(50, 205, 50, 0);
+  transition: 350ms;
+  border-radius: 10px;
+  align-self: center;
+    
+}
+.product-card-img:hover {
+    border: solid 5px limegreen;
+    transition: 350ms;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product-card-img:active {
+    border: solid 5px rgb(40, 163, 40);
+}
+
+.product-card-text-container {
+  align-self: center;
+  color: whitesmoke;
+  /* border: solid 2px whitesmoke; */
+  border-radius: 15px;
+  width: 80%;
+  padding: .5rem;
+}
+.product-card-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  /* color: whitesmoke;
+  border: solid 2px whitesmoke;
+  border-radius: 15px;
+  width: 60%; */
+  padding: .5rem 0 .5rem 0;
+  
+}
+.view-product-text {
+  color: whitesmoke;
+  font-size: small;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+}
+.view-product-text:hover {
+  color: limegreen;
+  text-decoration-color: limegreen;
+  transition: 350ms;
+}
+#sup {
+  font-size: 10px;
+  font-weight: 100;
+}
